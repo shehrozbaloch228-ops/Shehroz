@@ -1,457 +1,1021 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shehroz Waleed — Amazon Growth Specialist | Data-Driven Strategies</title>
-  <meta name="description" content="Shehroz Waleed, an Amazon Growth Specialist blending financial strategy with e-commerce expertise to drive profitable growth for U.S. brands on Amazon." />
-  <meta name="theme-color" content="#232F3E" />
-
-  <!-- Monochrome SVG favicon -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23232F3E'/%3E%3Ctext x='50' y='60' font-size='42' text-anchor='middle' fill='%23fff' font-family='Inter,system-ui,Arial'%3ES%3C/text%3E%3C/svg%3E">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="Shehroz Waleed is an Amazon Wholesale Growth Specialist helping brands scale with financial rigor, transparent strategy, and premium execution." />
+  <title>Shehroz Waleed | Amazon Wholesale Growth Specialist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0052FF',
+            ink: '#0A0B0D',
+            body: '#5B616E',
+            muted: '#7C828A',
+            hairline: '#DEE1E6',
+            'hairline-soft': '#EEF0F3',
+            canvas: '#FFFFFF',
+            soft: '#F7F7F7',
+            strong: '#EEF0F3',
+            dark: '#0A0B0D',
+            dark2: '#16181C',
+            up: '#05B169',
+            down: '#CF202F'
+          },
+          boxShadow: {
+            premium: '0 24px 70px rgba(10, 11, 13, 0.08)',
+            premiumSoft: '0 10px 30px rgba(10, 11, 13, 0.05)'
+          },
+          borderRadius: {
+            '3xl': '24px'
+          },
+          maxWidth: {
+            '8xl': '1280px'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif']
+          },
+          letterSpacing: {
+            display: '-0.015em'
+          },
+          keyframes: {
+            floatY: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-12px)' }
+            },
+            floatX: {
+              '0%, 100%': { transform: 'translateX(0px) translateY(0px)' },
+              '50%': { transform: 'translateX(10px) translateY(-8px)' }
+            },
+            shimmer: {
+              '0%': { transform: 'translateX(-130%)' },
+              '100%': { transform: 'translateX(230%)' }
+            },
+            revealUp: {
+              '0%': { opacity: '0', transform: 'translateY(30px)' },
+              '100%': { opacity: '1', transform: 'translateY(0px)' }
+            },
+            revealScale: {
+              '0%': { opacity: '0', transform: 'scale(0.96)' },
+              '100%': { opacity: '1', transform: 'scale(1)' }
+            },
+            ticker: {
+              '0%': { transform: 'translateX(0%)' },
+              '100%': { transform: 'translateX(-50%)' }
+            },
+            pulseSoft: {
+              '0%, 100%': { boxShadow: '0 0 0 0 rgba(0, 82, 255, 0.14)' },
+              '50%': { boxShadow: '0 0 0 16px rgba(0, 82, 255, 0)' }
+            },
+            gridGlow: {
+              '0%, 100%': { opacity: '0.30' },
+              '50%': { opacity: '0.60' }
+            },
+            lineGrow: {
+              '0%': { strokeDashoffset: '220' },
+              '100%': { strokeDashoffset: '0' }
+            },
+            slowRotate: {
+              '0%': { transform: 'rotate(0deg)' },
+              '100%': { transform: 'rotate(360deg)' }
+            },
+            cardDrift: {
+              '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+              '50%': { transform: 'translateY(-8px) rotate(-0.75deg)' }
+            },
+            blobMove: {
+              '0%, 100%': { transform: 'translate3d(0,0,0) scale(1)' },
+              '33%': { transform: 'translate3d(24px,-18px,0) scale(1.06)' },
+              '66%': { transform: 'translate3d(-18px,22px,0) scale(0.98)' }
+            },
+            hoverGlow: {
+              '0%, 100%': { filter: 'drop-shadow(0 0 0 rgba(0,82,255,0))' },
+              '50%': { filter: 'drop-shadow(0 0 24px rgba(0,82,255,0.12))' }
+            }
+          },
+          animation: {
+            floatY: 'floatY 6s ease-in-out infinite',
+            floatX: 'floatX 8s ease-in-out infinite',
+            shimmer: 'shimmer 2.8s linear infinite',
+            revealUp: 'revealUp .8s cubic-bezier(.2,.8,.2,1) both',
+            revealScale: 'revealScale .85s cubic-bezier(.2,.8,.2,1) both',
+            ticker: 'ticker 24s linear infinite',
+            pulseSoft: 'pulseSoft 3.5s ease-in-out infinite',
+            gridGlow: 'gridGlow 6s ease-in-out infinite',
+            lineGrow: 'lineGrow 1.2s ease-out forwards',
+            slowRotate: 'slowRotate 28s linear infinite',
+            cardDrift: 'cardDrift 7s ease-in-out infinite',
+            blobMove: 'blobMove 16s ease-in-out infinite',
+            hoverGlow: 'hoverGlow 4s ease-in-out infinite'
+          }
+        }
+      }
+    }
+  </script>
   <style>
-    :root{
-      color-scheme: dark;
-      --bg: #050505;
-      --panel: #0b0b0b;
-      --muted: #9ca3af;
-      --text: #ffffff;
-      --soft-border: rgba(255,255,255,0.04);
-      --accent-strong: rgba(255,255,255,0.06);
-      --sky-400: #38bdf8;
-      --sky-500: #0ea5e9;
-      --blue-600: #2563eb;
-      --blue-400: #60a5fa;
-      --blue-100: rgba(59, 130, 246, 0.1);
-      --amazon-blue: #232F3E;
+    :root {
+      color-scheme: light;
     }
-    
-    html,body{scroll-behavior:smooth}
-    body{
-      font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial;
-      background:var(--bg);
-      color:var(--muted);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      padding-top:5rem;
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: #0A0B0D;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
       overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
-
-    a{ color:var(--text); text-decoration:none; }
-    a:hover{ opacity:0.95; }
-
-    /* Header */
-    .site-header{
-      backdrop-filter: blur(8px);
-      background: linear-gradient(180deg, rgba(35,47,62,0.08), rgba(255,255,255,0.00));
-      border-bottom: 1px solid var(--soft-border);
+    ::selection {
+      background: rgba(0, 82, 255, 0.12);
+      color: #0A0B0D;
     }
-    
-    .nav-link { 
-      color:var(--muted); 
-      transition:all .3s cubic-bezier(0.34, 1.56, 0.64, 1); 
+    .display {
+      letter-spacing: -0.015em;
+      font-weight: 400;
+    }
+    .display-tight {
+      letter-spacing: -0.015em;
+      font-weight: 400;
+    }
+    .pill {
+      border-radius: 9999px;
+    }
+    .card-24 {
+      border-radius: 24px;
+    }
+    .grid-noise {
+      background-image:
+        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+        radial-gradient(circle at 1px 1px, rgba(10,11,13,0.05) 1px, transparent 0);
+      background-size: auto, 24px 24px;
+    }
+    .section-pad {
+      padding-top: 96px;
+      padding-bottom: 96px;
+    }
+    .section-tight {
+      padding-top: 72px;
+      padding-bottom: 72px;
+    }
+    .hairline {
+      border-color: #DEE1E6;
+    }
+    .hairline-soft {
+      border-color: #EEF0F3;
+    }
+    .shadow-premium {
+      box-shadow: 0 24px 70px rgba(10, 11, 13, 0.08);
+    }
+    .shadow-soft {
+      box-shadow: 0 10px 30px rgba(10, 11, 13, 0.05);
+    }
+    .ticker-mask {
+      mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+      -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    }
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: ticker 24s linear infinite;
+    }
+    .metric-row:nth-child(odd) {
+      background: rgba(247, 247, 247, 0.45);
+    }
+    .metric-row {
+      transition: background 300ms ease, transform 300ms ease;
+    }
+    .metric-row:hover {
+      background: rgba(0, 82, 255, 0.03);
+      transform: translateX(2px);
+    }
+    .button-blue {
+      background: #0052FF;
+      color: #fff;
+      transition: transform 300ms ease, background 300ms ease, box-shadow 300ms ease;
+      box-shadow: 0 12px 30px rgba(0, 82, 255, 0.16);
+    }
+    .button-blue:hover {
+      background: #003ecc;
+      transform: translateY(-2px);
+      box-shadow: 0 18px 42px rgba(0, 82, 255, 0.20);
+    }
+    .nav-link {
+      color: #1f2937;
       position: relative;
+      transition: color 240ms ease, opacity 240ms ease;
     }
-    
-    .nav-link::before {
-      content: '';
+    .nav-link:hover {
+      color: #0052FF;
+    }
+    .nav-link::after {
+      content: "";
       position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: -6px;
       left: 0;
-      background: var(--sky-400);
-      transition: width 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      bottom: -7px;
+      width: 0%;
+      height: 2px;
+      background: #0052FF;
+      transition: width 220ms ease;
     }
-    
-    .nav-link:hover::before {
+    .nav-link:hover::after {
       width: 100%;
     }
-    
-    .nav-link:hover{ 
-      color:var(--text); 
-      transform: translateY(-2px);
-    }
-    
-    .nav-active { 
-      color:var(--sky-400); 
-      font-weight:700; 
-      position:relative; 
-    }
-    
-    .nav-active::after{ 
-      content:''; 
-      position:absolute; 
-      left:0; 
-      bottom:-6px; 
-      height:2px; 
-      width:100%; 
-      background:var(--sky-400); 
-    }
-
-    /* Buttons */
-    .btn { 
-      display:inline-flex; 
-      align-items:center; 
-      gap:.6rem; 
-      padding:.8rem 1.4rem; 
-      border-radius:8px; 
-      font-weight:600; 
-      letter-spacing:.02em; 
-      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    .animated-border {
       position: relative;
       overflow: hidden;
     }
-    
-    .btn::before {
-      content: '';
+    .animated-border::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      padding: 1px;
+      border-radius: inherit;
+      background: linear-gradient(135deg, rgba(0,82,255,0.45), rgba(0,82,255,0.03), rgba(0,82,255,0.22));
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 300ms ease;
+    }
+    .animated-border:hover::before {
+      opacity: 1;
+    }
+    .grain {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.035;
+      z-index: 2;
+      background-image: radial-gradient(circle at 1px 1px, #000 1px, transparent 0);
+      background-size: 8px 8px;
+      mix-blend-mode: multiply;
+    }
+    .hero-dark {
+      background: #0A0B0D;
+      color: #ffffff;
+    }
+    .hero-glow {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 15% 25%, rgba(0, 82, 255, 0.22), transparent 28%),
+        radial-gradient(circle at 75% 30%, rgba(255,255,255,0.09), transparent 22%),
+        radial-gradient(circle at 55% 85%, rgba(0, 82, 255, 0.12), transparent 20%);
+      pointer-events: none;
+    }
+    .glass-line {
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .animated-underline {
+      position: relative;
+    }
+    .animated-underline::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, #0052FF, rgba(0,82,255,0.18));
+      transform-origin: left;
+      transform: scaleX(0.2);
+      transition: transform 420ms ease;
+    }
+    .animated-underline:hover::after {
+      transform: scaleX(1);
+    }
+    .counter {
+      font-variant-numeric: tabular-nums;
+      font-feature-settings: "tnum" 1;
+    }
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-variant-numeric: tabular-nums;
+    }
+    .scroll-fade {
+      position: relative;
+    }
+    .scroll-fade::before,
+    .scroll-fade::after {
+      content: "";
       position: absolute;
       top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: rgba(255,255,255,0.1);
-      transition: left 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-      z-index: -1;
+      bottom: 0;
+      width: 100px;
+      z-index: 2;
+      pointer-events: none;
     }
-    
-    .btn:hover::before {
+    .scroll-fade::before {
       left: 0;
+      background: linear-gradient(to right, #fff, transparent);
     }
-    
-    .btn-primary { 
-      background:var(--text); 
-      color:var(--panel); 
-      border:1px solid var(--text);
-      transform: translateY(0);
+    .scroll-fade::after {
+      right: 0;
+      background: linear-gradient(to left, #fff, transparent);
     }
-    
-    .btn-primary:hover { 
-      filter:brightness(.95);
-      transform: translateY(-2px);
-      box-shadow: 0 12px 24px rgba(56, 189, 248, 0.15);
+    .nav-blur {
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
     }
-    
-    .btn-ghost { 
-      background:transparent; 
-      border:1px solid var(--soft-border); 
-      color:var(--text);
+    .shadow-card {
+      box-shadow: 0 22px 60px rgba(10,11,13,0.08);
     }
-    
-    .btn-ghost:hover { 
-      background: var(--accent-strong);
-      border-color: var(--sky-400);
-      transform: translateY(-2px);
+    .vertical-rhythm > * + * {
+      margin-top: 16px;
     }
-
-    /* Cards & inputs */
-    .card { 
-      background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.008)); 
-      border:1px solid var(--soft-border); 
-      border-radius:12px;
-      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    .vertical-rhythm-lg > * + * {
+      margin-top: 20px;
     }
-    
-    .card:hover {
-      border-color: rgba(56, 189, 248, 0.3);
-      background: linear-gradient(180deg, rgba(56, 189, 248, 0.02), rgba(56, 189, 248, 0.01));
-      box-shadow: 0 20px 40px rgba(56, 189, 248, 0.08);
-    }
-    
-    .form-input {
-      background:transparent; 
-      color:var(--text); 
-      border:1px solid rgba(255,255,255,0.06);
-      padding:.75rem 1rem; 
-      border-radius:8px; 
-      transition:all .2s;
-    }
-    
-    .form-input::placeholder { 
-      color:var(--muted); 
-      opacity:.8; 
-    }
-    
-    .form-input:focus { 
-      outline:none; 
-      border-color:rgba(56, 189, 248, 0.5); 
-      box-shadow:0 8px 30px rgba(56, 189, 248, 0.1);
-      transform: translateY(-2px);
-    }
-
-    /* Footer Styles */
-    footer a { text-decoration:none; color:var(--muted); transition: all 0.2s ease; }
-    footer .quick-link:hover { color: var(--sky-400); transform: translateX(4px); }
-    footer .contact-link:hover { color: var(--text); }
-    footer .footer-title { color:var(--text); font-weight:600; }
-    footer .social-link {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 44px;
-        height: 44px;
-        border: 1px solid rgba(255,255,255,0.08);
-        border-radius: 8px;
-        color: var(--muted);
-        transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-    footer .social-link:hover {
-        background: rgba(56, 189, 248, 0.1);
-        border-color: rgba(56, 189, 248, 0.4);
-        color: var(--sky-400);
-        transform: translateY(-4px);
-    }
-
-    /* Animations */
     .reveal {
       opacity: 0;
-      transform: translateY(40px);
-      transition: opacity 0.8s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+      transform: translateY(26px);
+      transition: opacity 800ms cubic-bezier(.2,.8,.2,1), transform 800ms cubic-bezier(.2,.8,.2,1);
     }
-    
-    .reveal.visible {
+    .reveal.in {
       opacity: 1;
       transform: translateY(0);
     }
-
-    .fade-in-up {
-      animation: fadeInUp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    .stagger-1 { transition-delay: 80ms; }
+    .stagger-2 { transition-delay: 140ms; }
+    .stagger-3 { transition-delay: 200ms; }
+    .stagger-4 { transition-delay: 260ms; }
+    .stagger-5 { transition-delay: 320ms; }
+    .stagger-6 { transition-delay: 380ms; }
+    .hover-lift {
+      transition: transform 300ms ease, box-shadow 300ms ease, border-color 300ms ease;
     }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    .hover-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 22px 60px rgba(10,11,13,0.08);
     }
-
-    .slide-in-left {
-      animation: slideInLeft 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-    }
-
-    @keyframes slideInLeft {
-      from {
-        opacity: 0;
-        transform: translateX(-40px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-
-    .slide-in-right {
-      animation: slideInRight 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-    }
-
-    @keyframes slideInRight {
-      from {
-        opacity: 0;
-        transform: translateX(40px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-
-    .scale-in {
-      animation: scaleIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-    }
-
-    @keyframes scaleIn {
-      from {
-        opacity: 0;
-        transform: scale(0.9);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-
-    .float-up {
-      animation: floatUp 3s ease-in-out infinite;
-    }
-
-    @keyframes floatUp {
-      0%, 100% {
-        transform: translateY(0px);
-      }
-      50% {
-        transform: translateY(-10px);
-      }
-    }
-
-    .glow-pulse {
-      animation: glowPulse 3s ease-in-out infinite;
-    }
-
-    @keyframes glowPulse {
-      0%, 100% {
-        box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
-      }
-      50% {
-        box-shadow: 0 0 40px rgba(56, 189, 248, 0.4);
-      }
-    }
-
-    /* Section headers */
-    .section-header {
+    .dot-ring {
       position: relative;
-      display: inline-block;
     }
-
-    .section-header::after {
-      content: '';
+    .dot-ring::after {
+      content: "";
       position: absolute;
-      bottom: -8px;
-      left: 0;
-      width: 60px;
-      height: 3px;
-      background: linear-gradient(to right, var(--sky-400), transparent);
-      border-radius: 2px;
+      inset: -8px;
+      border-radius: 9999px;
+      border: 1px solid rgba(0,82,255,0.16);
+      animation: pulseSoft 3.6s ease-in-out infinite;
     }
-
-    /* CTA Button Animation */
-    .cta-btn {
-      position: relative;
-      z-index: 1;
-    }
-
-    .cta-btn::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 0;
-      height: 0;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.1);
-      transform: translate(-50%, -50%);
-      transition: width 0.6s, height 0.6s;
-      z-index: -1;
-    }
-
-    .cta-btn:hover::after {
-      width: 300px;
-      height: 300px;
-    }
-
-    /* Accessibility */
-    .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
-
-    @media (prefers-reduced-motion: reduce){ *{transition:none!important; animation:none!important} }
-
-    @media (max-width: 768px) {
-      body { padding-top: 4rem; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+      }
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
     }
   </style>
 </head>
-<body>
+<body class="bg-white text-[#0A0B0D] antialiased">
+  <div class="grain"></div>
 
-  <!-- Header -->
-  <header id="site-header" class="site-header fixed top-0 left-0 right-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-      <div class="flex items-center justify-between h-20">
-        <a href="https://shehrozwaleed.horizonhaulerllc.com" class="flex items-center gap-3 group">
-          <div class="transition-transform group-hover:scale-105">
-            <div class="text-lg font-extrabold tracking-tight text-white">Shehroz Waleed</div>
-            <div class="text-xs text-sky-400">Amazon Growth Specialist</div>
-          </div>
-        </a>
+  <header class="sticky top-0 z-50 border-b border-[#EEF0F3] bg-white/92 nav-blur">
+    <div class="mx-auto flex max-w-8xl items-center justify-between px-6 py-4 lg:px-8">
+      <a href="#home" class="flex items-center gap-3 group">
+        <span class="flex h-8 w-8 items-center justify-center rounded-[10px] bg-[#0052FF] text-sm font-semibold text-white shadow-lg shadow-blue-500/15 transition-transform duration-300 group-hover:scale-105">S</span>
+        <span class="text-[15px] font-semibold tracking-[-0.02em] text-[#0A0B0D]">Shehroz Waleed</span>
+      </a>
 
-        <!-- Desktop Nav -->
-        <nav class="hidden md:flex items-center gap-8 text-sm">
-          <a href="index.html" class="nav-active">Home</a>
-          <a href="about.html" class="nav-link">About</a>
-          <a href="services.html" class="nav-link">Services</a>
-          <a href="contact.html" class="nav-link">Contact</a>
-        </nav>
+      <nav class="hidden items-center gap-8 md:flex">
+        <a href="#about" class="nav-link text-[14px] font-medium">About</a>
+        <a href="#competencies" class="nav-link text-[14px] font-medium">Capabilities</a>
+        <a href="#ledger" class="nav-link text-[14px] font-medium">Ledger</a>
+        <a href="#contact" class="nav-link text-[14px] font-medium">Contact</a>
+      </nav>
 
-        <!-- Mobile Menu Button -->
-        <div class="md:hidden">
-          <button id="mobile-toggle" aria-expanded="false" aria-controls="mobile-menu" class="form-input p-2 rounded-md hover:scale-110 transition-transform" title="Open menu" aria-label="Open menu">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
-          </button>
-        </div>
+      <div class="hidden items-center gap-3 md:flex">
+        <a href="#ledger" class="rounded-full border border-[#DEE1E6] px-5 py-2.5 text-[14px] font-semibold text-[#0A0B0D] transition hover:border-[#cfd5dd] hover:bg-[#fafafa]">View Work</a>
+        <a href="#contact" class="rounded-full px-5 py-2.5 text-[14px] font-semibold button-blue">Book a Call</a>
       </div>
+
+      <button id="mobileMenuBtn" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#DEE1E6] text-[#0A0B0D] md:hidden" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M3 5H17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M3 10H17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M3 15H17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </button>
     </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden fixed top-20 left-0 right-0 z-40 backdrop-blur-md" style="background:linear-gradient(180deg, var(--panel), rgba(11,11,11,0.8)); border-bottom: 1px solid var(--soft-border);">
-      <div class="px-6 pb-6 pt-2 space-y-3">
-        <a href="index.html" class="block py-3 text-sky-400 font-bold">Home</a>
-        <a href="about.html" class="block py-3 text-white hover:text-sky-400 transition-colors font-medium">About</a>
-        <a href="services.html" class="block py-3 text-white hover:text-sky-400 transition-colors font-medium">Services</a>
-        <a href="contact.html" class="block py-3 text-white hover:text-sky-400 transition-colors font-medium">Contact</a>
-        <a href="contact.html" class="block py-3 mt-4 px-3 rounded-lg bg-sky-400 text-black font-bold text-center hover:bg-sky-300 transition-all">Book a Call</a>
+    <div id="mobileMenu" class="hidden border-t border-[#EEF0F3] bg-white md:hidden">
+      <div class="mx-auto max-w-8xl px-6 py-5">
+        <div class="grid gap-3 text-[14px] font-medium">
+          <a href="#about" class="rounded-2xl px-4 py-3 hover:bg-[#F7F7F7]">About</a>
+          <a href="#competencies" class="rounded-2xl px-4 py-3 hover:bg-[#F7F7F7]">Capabilities</a>
+          <a href="#ledger" class="rounded-2xl px-4 py-3 hover:bg-[#F7F7F7]">Ledger</a>
+          <a href="#contact" class="rounded-2xl px-4 py-3 hover:bg-[#F7F7F7]">Contact</a>
+        </div>
       </div>
     </div>
   </header>
 
-  <main id="main" tabindex="-1">
+  <main id="home">
+    <section class="hero-dark relative overflow-hidden">
+      <div class="hero-glow"></div>
+      <div class="absolute inset-x-0 top-0 h-px bg-white/10"></div>
+      <div class="absolute inset-x-0 bottom-0 h-px bg-white/10"></div>
 
-    <!-- Hero Section -->
-    <section class="relative overflow-hidden -mt-20 pt-20" aria-label="Hero">
-      <div class="absolute inset-0 opacity-5" style="background: radial-gradient(circle at 20% 50%, rgba(56,189,248,0.3) 0%, transparent 50%);"></div>
-      <div class="absolute inset-0 opacity-5" style="background: radial-gradient(circle at 80% 80%, rgba(35,47,62,0.3) 0%, transparent 50%);"></div>
-      
-      <div class="relative max-w-6xl mx-auto px-6 py-24 sm:py-32">
-        <div class="hero-content">
-          <div class="flex flex-col lg:flex-row gap-12 items-center">
-            <!-- Content -->
-            <div class="flex-1 slide-in-left" style="animation-delay: 0.1s;">
-              <div class="badge-pulse inline-block mb-4 px-4 py-2 rounded-full bg-blue-100 text-blue-600 font-semibold text-sm">
-                🚀 Driving Profitable Growth on Amazon
+      <div class="mx-auto grid max-w-8xl gap-16 px-6 py-20 lg:grid-cols-[1.02fr_0.98fr] lg:px-8 lg:py-28">
+        <div class="relative z-10 flex flex-col justify-center">
+          <div class="reveal stagger-1">
+            <span class="inline-flex items-center gap-2 rounded-full bg-white/8 px-4 py-2 text-[12px] font-semibold uppercase tracking-[0.14em] text-white/90 ring-1 ring-white/10">
+              <span class="h-1.5 w-1.5 rounded-full bg-[#0052FF]"></span>
+              Amazon Wholesale Growth Specialist
+            </span>
+          </div>
+
+          <div class="reveal stagger-2 mt-6">
+            <h1 class="display max-w-4xl text-balance text-[clamp(48px,7vw,84px)] leading-[0.95] tracking-display text-white">
+              Asset Management &amp; Capital Deployment for Amazon Wholesale Brands.
+            </h1>
+          </div>
+
+          <div class="reveal stagger-3 mt-7 max-w-2xl">
+            <p class="text-[18px] leading-[1.75] text-white/72">
+              I’m Shehroz Waleed. I combine financial rigor, transparent partnership, and marketplace execution to drive sustainable, profitable growth for U.S. brands on Amazon—without the noise, vanity metrics, or generic agency playbooks.
+            </p>
+          </div>
+
+          <div class="reveal stagger-4 mt-9 flex flex-wrap gap-3">
+            <a href="#contact" class="rounded-full px-6 py-3 text-[15px] font-semibold button-blue">Book a Strategy Call</a>
+            <a href="#ledger" class="rounded-full border border-white/16 px-6 py-3 text-[15px] font-semibold text-white transition hover:bg-white/6">Explore the Ledger</a>
+          </div>
+
+          <div class="reveal stagger-5 mt-8 flex flex-wrap items-center gap-4 text-[13px] text-white/55">
+            <span class="inline-flex items-center gap-2">
+              <span class="h-2 w-2 rounded-full bg-[#05B169]"></span>
+              Profit-first decision making
+            </span>
+            <span class="inline-flex items-center gap-2">
+              <span class="h-2 w-2 rounded-full bg-[#0052FF]"></span>
+              Transparent reporting
+            </span>
+            <span class="inline-flex items-center gap-2">
+              <span class="h-2 w-2 rounded-full bg-[#CF202F]"></span>
+              Risk-aware execution
+            </span>
+          </div>
+        </div>
+
+        <div class="relative z-10">
+          <div class="relative mx-auto min-h-[640px] max-w-[640px]">
+            <div class="absolute inset-0 rounded-[32px] border border-white/8 bg-white/3 blur-3xl opacity-40 animate-gridGlow"></div>
+
+            <div class="absolute left-0 top-10 h-[520px] w-[520px] rounded-[32px] border border-white/10 bg-[#16181C] shadow-premium animated-border reveal stagger-2 hover-lift animate-cardDrift">
+              <div class="flex items-center justify-between border-b border-white/8 px-6 py-5">
+                <div>
+                  <div class="text-[12px] font-semibold uppercase tracking-[0.14em] text-white/50">Asset Performance</div>
+                  <div class="mt-2 text-[18px] font-semibold tracking-[-0.03em] text-white">Amazon Wholesale Dashboard</div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="h-2.5 w-2.5 rounded-full bg-[#05B169]"></span>
+                  <span class="text-[12px] text-white/50">Live</span>
+                </div>
               </div>
-              <h1 class="mt-4 text-5xl sm:text-7xl font-black tracking-tight text-white leading-tight">
-                Data-Driven <span class="bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">Amazon Growth</span>
-              </h1>
-              <p class="mt-6 text-lg leading-relaxed text-gray-300 max-w-2xl">
-                I'm Shehroz Waleed, an Amazon Growth Specialist who transforms how brands think about profitability. Using financial expertise and marketplace mastery, I drive sustainable, profitable growth for U.S. sellers.
-              </p>
-              <div class="mt-8 flex flex-wrap gap-4">
-                <a href="contact.html" class="btn btn-primary cta-btn">Start Your Growth Journey</a>
-                <a href="about.html" class="btn btn-ghost">Learn My Story</a>
-              </div>
-            </div>
-            
-            <!-- Stats/Image Area -->
-            <div class="flex-1 slide-in-right" style="animation-delay: 0.2s;">
-              <div class="relative">
-                <div class="grid grid-cols-2 gap-4 mb-6">
-                  <div class="stat-item card p-6 text-center hover:scale-105 transition-transform cursor-pointer">
-                    <div class="stat-counter text-3xl font-900">500+</div>
-                    <p class="text-sm text-gray-400 mt-2">Brands Analyzed</p>
+
+              <div class="grid gap-5 px-6 py-6">
+                <div class="grid grid-cols-3 gap-4">
+                  <div class="rounded-3xl border border-white/8 bg-white/4 p-4">
+                    <div class="text-[12px] text-white/52">Revenue Influenced</div>
+                    <div class="mt-2 text-[26px] font-semibold tracking-[-0.04em] text-white counter">$50M+</div>
+                    <div class="mt-2 text-[12px] text-[#05B169]">+18% vs last quarter</div>
                   </div>
-                  <div class="stat-item card p-6 text-center hover:scale-105 transition-transform cursor-pointer">
-                    <div class="stat-counter text-3xl font-900">$50M+</div>
-                    <p class="text-sm text-gray-400 mt-2">Revenue Influenced</p>
+                  <div class="rounded-3xl border border-white/8 bg-white/4 p-4">
+                    <div class="text-[12px] text-white/52">Avg. ROI Growth</div>
+                    <div class="mt-2 text-[26px] font-semibold tracking-[-0.04em] text-white counter">40%</div>
+                    <div class="mt-2 text-[12px] text-[#05B169]">+6% in 90 days</div>
                   </div>
-                  <div class="stat-item card p-6 text-center hover:scale-105 transition-transform cursor-pointer">
-                    <div class="stat-counter text-3xl font-900">40%</div>
-                    <p class="text-sm text-gray-400 mt-2">Avg. ROI Growth</p>
-                  </div>
-                  <div class="stat-item card p-6 text-center hover:scale-105 transition-transform cursor-pointer">
-                    <div class="stat-counter text-3xl font-900">6+</div>
-                    <p class="text-sm text-gray-400 mt-2">Years in E-Commerce</p>
+                  <div class="rounded-3xl border border-white/8 bg-white/4 p-4">
+                    <div class="text-[12px] text-white/52">Years in E-Commerce</div>
+                    <div class="mt-2 text-[26px] font-semibold tracking-[-0.04em] text-white counter">6+</div>
+                    <div class="mt-2 text-[12px] text-white/52">Operational depth</div>
                   </div>
                 </div>
-                <img src="https://i.ibb.co/pB63NnFH/Shehroz-Waleed.jpg"
-                     alt="Shehroz Waleed - Amazon Growth Specialist"
-                     class="hero-image rounded-2xl border border-sky-400/20 shadow-2xl w-full object-cover glow-pulse"
-                     onerror="this.onerror=null; this.src='https://placehold.co/400x500/0b0b0b/333333?text=Shehroz+Waleed';">
+
+                <div class="rounded-3xl border border-white/8 bg-white/4 p-5">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <div class="text-[12px] uppercase tracking-[0.14em] text-white/45">Performance Curve</div>
+                      <div class="mt-2 text-[14px] text-white/72">Stable acquisition, improving profitability</div>
+                    </div>
+                    <div class="rounded-full bg-white/6 px-3 py-1 text-[12px] text-white/65">Q2 / Q3</div>
+                  </div>
+
+                  <div class="mt-5 h-[180px] rounded-[22px] border border-white/8 bg-[#0D0F12] px-4 py-4">
+                    <svg viewBox="0 0 520 180" class="h-full w-full" fill="none" aria-hidden="true">
+                      <defs>
+                        <linearGradient id="lineBlue" x1="0" y1="0" x2="1" y2="0">
+                          <stop offset="0%" stop-color="#0052FF" stop-opacity="0.3"/>
+                          <stop offset="50%" stop-color="#0052FF" stop-opacity="1"/>
+                          <stop offset="100%" stop-color="#0052FF" stop-opacity="0.25"/>
+                        </linearGradient>
+                        <linearGradient id="areaBlue" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stop-color="#0052FF" stop-opacity="0.22"/>
+                          <stop offset="100%" stop-color="#0052FF" stop-opacity="0"/>
+                        </linearGradient>
+                      </defs>
+                      <g opacity="0.18">
+                        <path d="M20 20H500" stroke="#fff"/>
+                        <path d="M20 60H500" stroke="#fff"/>
+                        <path d="M20 100H500" stroke="#fff"/>
+                        <path d="M20 140H500" stroke="#fff"/>
+                      </g>
+                      <path d="M20 140 C65 130, 82 100, 124 108 C171 116, 197 55, 235 67 C281 79, 315 40, 356 48 C401 57, 426 28, 500 36 L500 180 L20 180 Z" fill="url(#areaBlue)"/>
+                      <path d="M20 140 C65 130, 82 100, 124 108 C171 116, 197 55, 235 67 C281 79, 315 40, 356 48 C401 57, 426 28, 500 36" stroke="url(#lineBlue)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="220" stroke-dashoffset="220">
+                        <animate attributeName="stroke-dashoffset" from="220" to="0" dur="1.2s" fill="freeze"/>
+                      </path>
+                      <circle cx="124" cy="108" r="4" fill="#0052FF"/>
+                      <circle cx="235" cy="67" r="4" fill="#0052FF"/>
+                      <circle cx="356" cy="48" r="4" fill="#0052FF"/>
+                      <circle cx="500" cy="36" r="4" fill="#0052FF"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="rounded-3xl border border-white/8 bg-white/4 p-5">
+                    <div class="text-[12px] text-white/50">Risk Posture</div>
+                    <div class="mt-2 text-[18px] font-semibold tracking-[-0.03em] text-white">Controlled</div>
+                    <div class="mt-3 h-1.5 rounded-full bg-white/8">
+                      <div class="h-full w-[72%] rounded-full bg-[#05B169] animate-pulseSoft"></div>
+                    </div>
+                  </div>
+                  <div class="rounded-3xl border border-white/8 bg-white/4 p-5">
+                    <div class="text-[12px] text-white/50">Inventory Velocity</div>
+                    <div class="mt-2 text-[18px] font-semibold tracking-[-0.03em] text-white">High</div>
+                    <div class="mt-3 h-1.5 rounded-full bg-white/8">
+                      <div class="h-full w-[84%] rounded-full bg-[#0052FF] animate-pulseSoft"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute right-0 top-32 w-[280px] rounded-[28px] border border-white/10 bg-[#16181C] p-5 shadow-premium reveal stagger-3 hover-lift animate-floatY">
+              <div class="flex items-center justify-between">
+                <div class="text-[12px] uppercase tracking-[0.14em] text-white/45">Monthly Yield</div>
+                <span class="rounded-full bg-[#05B169]/10 px-3 py-1 text-[12px] font-semibold text-[#05B169]">+12.4%</span>
+              </div>
+              <div class="mt-4 text-[30px] font-semibold tracking-[-0.04em] text-white counter">$318K</div>
+              <div class="mt-4 flex items-end gap-2">
+                <div class="h-10 w-3 rounded-full bg-white/8"></div>
+                <div class="h-16 w-3 rounded-full bg-white/8"></div>
+                <div class="h-20 w-3 rounded-full bg-[#0052FF]"></div>
+                <div class="h-14 w-3 rounded-full bg-white/8"></div>
+                <div class="h-24 w-3 rounded-full bg-[#05B169]"></div>
+                <div class="h-18 w-3 rounded-full bg-white/8"></div>
+                <div class="h-28 w-3 rounded-full bg-[#0052FF]"></div>
+              </div>
+              <div class="mt-4 text-[12px] leading-[1.6] text-white/50">Capital allocated across wholesale sets, replenishment windows, and margin buffers.</div>
+            </div>
+
+            <div class="absolute bottom-4 left-24 w-[320px] rounded-[28px] border border-white/10 bg-[#16181C] p-5 shadow-premium reveal stagger-4 hover-lift animate-floatX">
+              <div class="flex items-center gap-3">
+                <div class="flex h-12 w-12 items-center justify-center rounded-full bg-[#0052FF]/10 ring-1 ring-[#0052FF]/20">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M6 13.5L10 17.5L18 8.5" stroke="#0052FF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-[12px] uppercase tracking-[0.14em] text-white/45">Operating System</div>
+                  <div class="mt-1 text-[15px] font-semibold text-white">Finance-first wholesale workflows</div>
+                </div>
+              </div>
+              <div class="mt-4 grid grid-cols-3 gap-3">
+                <div class="rounded-2xl border border-white/8 bg-white/4 p-3">
+                  <div class="text-[11px] text-white/45">Sourcing</div>
+                  <div class="mt-2 text-[16px] font-semibold text-white">Verified</div>
+                </div>
+                <div class="rounded-2xl border border-white/8 bg-white/4 p-3">
+                  <div class="text-[11px] text-white/45">Margin</div>
+                  <div class="mt-2 text-[16px] font-semibold text-[#05B169]">Healthy</div>
+                </div>
+                <div class="rounded-2xl border border-white/8 bg-white/4 p-3">
+                  <div class="text-[11px] text-white/45">Risk</div>
+                  <div class="mt-2 text-[16px] font-semibold text-[#CF202F]">Managed</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute inset-0 rounded-[34px] ring-1 ring-white/8 animate-gridGlow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-y border-[#EEF0F3] bg-white py-4">
+      <div class="ticker-mask overflow-hidden">
+        <div class="marquee-track whitespace-nowrap">
+          <div class="flex items-center gap-10 pr-10 text-[12px] font-semibold uppercase tracking-[0.14em] text-[#5B616E]">
+            <span class="inline-flex items-center gap-2">
+              <span class="h-1.5 w-1.5 rounded-full bg-[#0052FF]"></span>
+              50M+ Revenue Influenced
+            </span>
+            <span class="inline-flex items-center gap-2">
+              <span class="h-1.5 w-1.5 rounded-full bg-[#05B169]"></span>
+              40% Avg. ROI Growth
+            </span>
+            <span class="inline-flex items-center gap-2">
+              <span class="h-1.5 w-1.5 rounded-full bg-[#0052FF]"></span>
+              6+ Years in E-Commerce
+            </span>
+            <span class="inline-flex items-center gap-2">
+              <span class="h-1.5 w-1.5 rounded-full bg-[#CF202F]"></span>
+              Transparent Partnership
+            </span>
+            <span class="inline-flex items-center gap-2">
+              <span class="h-1.5 w-1.5 rounded-full bg-[#0052FF]"></span>
+              Profit-First Execution
+            </span>
+          </div>
+          <div class="flex items-center gap-10 pr-10 text-[12px] font-semibold uppercase tracking-[0.14em] text-[#5B616E]">
+            <span class="inline-flex items-center gap-2">
+              <span class="h-1.5 w-1.5 rounded-full bg-[#0052FF]"></span>
+              50M+ Revenue Influenced
+            </span>
+            <span class="inline-flex items-center gap-2">
+              <span class="h-1.5 w-1.5 rounded-full bg-[#05B169]"></span>
+              40% Avg. ROI Growth
+            </span>
+            <span class="inline-flex items-center gap-2">
+              <span class="h-1.5 w-1.5 rounded-full bg-[#0052FF]"></span>
+              6+ Years in E-Commerce
+            </span>
+            <span class="inline-flex items-center gap-2">
+              <span class="h-1.5 w-1.5 rounded-full bg-[#CF202F]"></span>
+              Transparent Partnership
+            </span>
+            <span class="inline-flex items-center gap-2">
+              <span class="h-1.5 w-1.5 rounded-full bg-[#0052FF]"></span>
+              Profit-First Execution
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="competencies" class="section-pad bg-white">
+      <div class="mx-auto max-w-8xl px-6 lg:px-8">
+        <div class="max-w-3xl reveal">
+          <span class="eyebrow">Core Competencies</span>
+          <h2 class="display-tight mt-5 text-[clamp(34px,4.2vw,54px)] leading-[1.02] tracking-display">
+            Precision systems for wholesale brands that need clarity, control, and compounding performance.
+          </h2>
+          <p class="mt-5 max-w-2xl text-[18px] leading-[1.75] text-[#5B616E]">
+            The business is framed around disciplined growth—what to buy, what to protect, how to deploy capital, and how to keep the operating machine clean enough to scale with confidence.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          <article class="group reveal stagger-1 animated-border hover-lift rounded-3xl border border-[#DEE1E6] bg-white p-8 shadow-soft">
+            <div class="flex h-14 w-14 items-center justify-center rounded-full bg-[#EEF0F3] ring-1 ring-[#DEE1E6] transition duration-300 group-hover:scale-105 group-hover:bg-[#0052FF]/8">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+                <path d="M5 8.5L13 4L21 8.5L13 13L5 8.5Z" stroke="#0052FF" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M5 8.5V17.5L13 22L21 17.5V8.5" stroke="#0A0B0D" stroke-opacity=".55" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M13 13V22" stroke="#0052FF" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="mt-6 text-[22px] font-semibold tracking-[-0.03em]">Wholesale Sourcing</h3>
+            <p class="mt-4 text-[16px] leading-[1.75] text-[#5B616E]">
+              In-depth market scanning, supplier validation, offer comparison, and sourcing discipline designed to keep procurement decisions commercially rational and operationally resilient.
+            </p>
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="pill border border-[#EEF0F3] px-3 py-1.5 text-[12px] font-semibold text-[#0A0B0D]">Supplier validation</span>
+              <span class="pill border border-[#EEF0F3] px-3 py-1.5 text-[12px] font-semibold text-[#0A0B0D]">Offer discipline</span>
+              <span class="pill border border-[#EEF0F3] px-3 py-1.5 text-[12px] font-semibold text-[#0A0B0D]">Margin-aware buys</span>
+            </div>
+          </article>
+
+          <article class="group reveal stagger-2 animated-border hover-lift rounded-3xl border border-[#DEE1E6] bg-white p-8 shadow-soft">
+            <div class="flex h-14 w-14 items-center justify-center rounded-full bg-[#EEF0F3] ring-1 ring-[#DEE1E6] transition duration-300 group-hover:scale-105 group-hover:bg-[#0052FF]/8">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+                <path d="M6 18.5C6 18.5 8.5 14.5 13 14.5C17.5 14.5 20 18.5 20 18.5" stroke="#0052FF" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M8 9C8 11.2 9.8 13 12 13C14.2 13 16 11.2 16 9C16 6.8 14.2 5 12 5C9.8 5 8 6.8 8 9Z" stroke="#0A0B0D" stroke-opacity=".55" stroke-width="1.8"/>
+                <path d="M18 7H22" stroke="#0052FF" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M20 5V9" stroke="#0052FF" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="mt-6 text-[22px] font-semibold tracking-[-0.03em]">Financial Scrutiny</h3>
+            <p class="mt-4 text-[16px] leading-[1.75] text-[#5B616E]">
+              Master budgeting, unit economics review, and profitability analysis that expose weak assumptions before capital is deployed. Every move is tested through a financial lens.
+            </p>
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="pill border border-[#EEF0F3] px-3 py-1.5 text-[12px] font-semibold text-[#0A0B0D]">Master budgeting</span>
+              <span class="pill border border-[#EEF0F3] px-3 py-1.5 text-[12px] font-semibold text-[#0A0B0D]">Unit economics</span>
+              <span class="pill border border-[#EEF0F3] px-3 py-1.5 text-[12px] font-semibold text-[#0A0B0D]">Capital discipline</span>
+            </div>
+          </article>
+
+          <article class="group reveal stagger-3 animated-border hover-lift rounded-3xl border border-[#DEE1E6] bg-white p-8 shadow-soft">
+            <div class="flex h-14 w-14 items-center justify-center rounded-full bg-[#EEF0F3] ring-1 ring-[#DEE1E6] transition duration-300 group-hover:scale-105 group-hover:bg-[#0052FF]/8">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+                <path d="M6.5 19.5H19.5" stroke="#0052FF" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M8 7.5H18L20 13L18 18.5H8L6 13L8 7.5Z" stroke="#0A0B0D" stroke-opacity=".55" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M10.5 10.5H15.5" stroke="#0052FF" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M10.5 13H14" stroke="#0052FF" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="mt-6 text-[22px] font-semibold tracking-[-0.03em]">FBA / FBM Logistics Frameworks</h3>
+            <p class="mt-4 text-[16px] leading-[1.75] text-[#5B616E]">
+              Inventory rhythm, fulfillment balancing, and logistics systems designed to reduce friction, protect availability, and keep the wholesale engine dependable as volume expands.
+            </p>
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="pill border border-[#EEF0F3] px-3 py-1.5 text-[12px] font-semibold text-[#0A0B0D]">Inventory rhythm</span>
+              <span class="pill border border-[#EEF0F3] px-3 py-1.5 text-[12px] font-semibold text-[#0A0B0D]">Fulfillment balance</span>
+              <span class="pill border border-[#EEF0F3] px-3 py-1.5 text-[12px] font-semibold text-[#0A0B0D]">Availability control</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="ledger" class="section-pad bg-[#F7F7F7]">
+      <div class="mx-auto max-w-8xl px-6 lg:px-8">
+        <div class="max-w-3xl reveal">
+          <span class="eyebrow">Interactive Asset Ledger</span>
+          <h2 class="display-tight mt-5 text-[clamp(34px,4.2vw,54px)] leading-[1.02] tracking-display">
+            Marketplace velocity, presented like an institutional allocation board.
+          </h2>
+          <p class="mt-5 max-w-2xl text-[18px] leading-[1.75] text-[#5B616E]">
+            The table below simulates a disciplined portfolio matrix: product position, velocity, cost discipline, and trend direction shown in a format that feels precise, legible, and premium.
+          </p>
+        </div>
+
+        <div class="mt-12 overflow-hidden rounded-[28px] border border-[#DEE1E6] bg-white shadow-premium">
+          <div class="border-b border-[#EEF0F3] px-6 py-5 md:px-8">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+              <div>
+                <div class="text-[12px] font-semibold uppercase tracking-[0.14em] text-[#7C828A]">Portfolio Matrix</div>
+                <div class="mt-2 text-[20px] font-semibold tracking-[-0.03em] text-[#0A0B0D]">Wholesale Asset Ledger</div>
+              </div>
+              <div class="flex items-center gap-2 rounded-full bg-[#EEF0F3] px-3 py-2 text-[12px] font-semibold text-[#0A0B0D]">
+                <span class="h-2 w-2 rounded-full bg-[#05B169]"></span>
+                Updated live
+              </div>
+            </div>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="min-w-full border-collapse text-left">
+              <thead>
+                <tr class="border-b border-[#EEF0F3] bg-[#F7F7F7] text-[12px] uppercase tracking-[0.14em] text-[#7C828A]">
+                  <th class="px-6 py-4 md:px-8">Asset</th>
+                  <th class="px-6 py-4 md:px-8">Ticker</th>
+                  <th class="px-6 py-4 md:px-8">Entry</th>
+                  <th class="px-6 py-4 md:px-8">Velocity</th>
+                  <th class="px-6 py-4 md:px-8">Margin</th>
+                  <th class="px-6 py-4 md:px-8">Trend</th>
+                  <th class="px-6 py-4 md:px-8">Risk</th>
+                </tr>
+              </thead>
+              <tbody class="text-[15px]">
+                <tr class="metric-row border-b border-[#EEF0F3]">
+                  <td class="px-6 py-5 md:px-8">
+                    <div class="flex items-center gap-4">
+                      <div class="flex h-11 w-11 items-center justify-center rounded-full bg-[#EEF0F3] ring-1 ring-[#DEE1E6]">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                          <path d="M6 14.5L10 10.5L13 13.5L17 8.5" stroke="#0052FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M6 17.5H17" stroke="#0A0B0D" stroke-opacity=".4" stroke-width="1.4" stroke-linecap="round"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="font-semibold text-[#0A0B0D]">Core Wholesale Line</div>
+                        <div class="text-[13px] text-[#7C828A]">Stable replenishment product</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#0A0B0D]">WHL-001</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#0A0B0D]">$18.40</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#05B169]">+24.8%</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#0A0B0D]">31.2%</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#05B169]">UP</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#0A0B0D]">LOW</td>
+                </tr>
+                <tr class="metric-row border-b border-[#EEF0F3]">
+                  <td class="px-6 py-5 md:px-8">
+                    <div class="flex items-center gap-4">
+                      <div class="flex h-11 w-11 items-center justify-center rounded-full bg-[#EEF0F3] ring-1 ring-[#DEE1E6]">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                          <path d="M5.5 7.5H16.5" stroke="#0052FF" stroke-width="1.8" stroke-linecap="round"/>
+                          <path d="M8 11H14" stroke="#0052FF" stroke-width="1.8" stroke-linecap="round"/>
+                          <path d="M6 15.5H16" stroke="#0052FF" stroke-width="1.8" stroke-linecap="round"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="font-semibold text-[#0A0B0D]">Expansion SKU</div>
+                        <div class="text-[13px] text-[#7C828A]">Monitoring profitability drift</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#0A0B0D]">WHL-118</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#0A0B0D]">$22.10</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#CF202F]">-4.1%</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#0A0B0D]">27.6%</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#CF202F]">DOWN</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#0A0B0D]">MID</td>
+                </tr>
+                <tr class="metric-row border-b border-[#EEF0F3]">
+                  <td class="px-6 py-5 md:px-8">
+                    <div class="flex items-center gap-4">
+                      <div class="flex h-11 w-11 items-center justify-center rounded-full bg-[#EEF0F3] ring-1 ring-[#DEE1E6]">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                          <path d="M6 6.5H16" stroke="#0052FF" stroke-width="1.8" stroke-linecap="round"/>
+                          <path d="M6 11H16" stroke="#0052FF" stroke-width="1.8" stroke-linecap="round"/>
+                          <path d="M6 15.5H12" stroke="#0052FF" stroke-width="1.8" stroke-linecap="round"/>
+                          <path d="M16.5 15.5L18.5 13.5" stroke="#0A0B0D" stroke-opacity=".45" stroke-width="1.8" stroke-linecap="round"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="font-semibold text-[#0A0B0D]">Reorder Candidate</div>
+                        <div class="text-[13px] text-[#7C828A]">Fast-moving replenishment item</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#0A0B0D]">WHL-246</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#0A0B0D]">$14.75</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#05B169]">+12.6%</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#0A0B0D]">34.8%</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#05B169]">UP</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#0A0B0D]">LOW</td>
+                </tr>
+                <tr class="metric-row border-b border-[#EEF0F3]">
+                  <td class="px-6 py-5 md:px-8">
+                    <div class="flex items-center gap-4">
+                      <div class="flex h-11 w-11 items-center justify-center rounded-full bg-[#EEF0F3] ring-1 ring-[#DEE1E6]">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                          <path d="M6 15L10 11L13 14L17 9" stroke="#0052FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M6 6.5H17" stroke="#0A0B0D" stroke-opacity=".35" stroke-width="1.4" stroke-linecap="round"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="font-semibold text-[#0A0B0D]">Margin Defense Unit</div>
+                        <div class="text-[13px] text-[#7C828A]">Watching competitive pressure</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#0A0B0D]">WHL-392</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#0A0B0D]">$19.60</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#05B169]">+7.9%</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#0A0B0D]">38.1%</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#05B169]">UP</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#0A0B0D]">MID</td>
+                </tr>
+                <tr class="metric-row">
+                  <td class="px-6 py-5 md:px-8">
+                    <div class="flex items-center gap-4">
+                      <div class="flex h-11 w-11 items-center justify-center rounded-full bg-[#EEF0F3] ring-1 ring-[#DEE1E6]">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                          <path d="M6 16.5C7.5 14 9.6 12.9 11 12.9C12.4 12.9 14.5 14 16 16.5" stroke="#0052FF" stroke-width="1.8" stroke-linecap="round"/>
+                          <path d="M8.2 9.2C8.2 10.7 9.5 12 11 12C12.5 12 13.8 10.7 13.8 9.2C13.8 7.7 12.5 6.4 11 6.4C9.5 6.4 8.2 7.7 8.2 9.2Z" stroke="#0A0B0D" stroke-opacity=".45" stroke-width="1.8"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="font-semibold text-[#0A0B0D]">Strategic Reserve</div>
+                        <div class="text-[13px] text-[#7C828A]">Selective allocation only</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#0A0B0D]">WHL-501</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#0A0B0D]">$11.90</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#CF202F]">-2.7%</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#0A0B0D]">22.4%</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#CF202F]">DOWN</td>
+                  <td class="px-6 py-5 md:px-8 mono text-[#0A0B0D]">HIGH</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-pad bg-white">
+      <div class="mx-auto max-w-8xl px-6 lg:px-8">
+        <div class="grid items-start gap-10 lg:grid-cols-[0.92fr_1.08fr]">
+          <div class="reveal">
+            <span class="eyebrow">About Profile</span>
+            <h2 class="display-tight mt-5 text-[clamp(34px,4.2vw,54px)] leading-[1.02] tracking-display">
+              A calm, operationally rigorous partner for brands that take growth seriously.
+            </h2>
+            <p class="mt-5 max-w-xl text-[18px] leading-[1.75] text-[#5B616E]">
+              I combine financial acumen with marketplace execution to protect margin, reduce unnecessary risk, and make growth look composed rather than chaotic. My work is built for owners who want clarity, not hype.
+            </p>
+
+            <div class="mt-8 grid gap-4">
+              <div class="rounded-3xl border border-[#EEF0F3] bg-[#F7F7F7] p-5 shadow-soft animated-border">
+                <div class="text-[12px] font-semibold uppercase tracking-[0.14em] text-[#7C828A]">Financial Discipline</div>
+                <div class="mt-2 text-[18px] font-semibold tracking-[-0.03em] text-[#0A0B0D]">Every allocation is measured against return, not vanity.</div>
+              </div>
+              <div class="rounded-3xl border border-[#EEF0F3] bg-[#F7F7F7] p-5 shadow-soft animated-border">
+                <div class="text-[12px] font-semibold uppercase tracking-[0.14em] text-[#7C828A]">Operational Risk Mitigation</div>
+                <div class="mt-2 text-[18px] font-semibold tracking-[-0.03em] text-[#0A0B0D]">Systems are designed to reduce friction and protect continuity.</div>
+              </div>
+              <div class="rounded-3xl border border-[#EEF0F3] bg-[#F7F7F7] p-5 shadow-soft animated-border">
+                <div class="text-[12px] font-semibold uppercase tracking-[0.14em] text-[#7C828A]">Transparent Partnership</div>
+                <div class="mt-2 text-[18px] font-semibold tracking-[-0.03em] text-[#0A0B0D]">You always see the logic, the metrics, and the reason behind each move.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid gap-6 reveal">
+            <div class="grid gap-6 lg:grid-cols-2">
+              <div class="rounded-3xl border border-[#DEE1E6] bg-white p-7 shadow-premium hover-lift">
+                <div class="flex items-center justify-between">
+                  <span class="caption">Brand Analysis</span>
+                  <span class="rounded-full bg-[#EEF0F3] px-3 py-1 text-[12px] font-semibold text-[#0A0B0D]">Validated</span>
+                </div>
+                <div class="mt-6 text-[28px] font-semibold tracking-[-0.04em] text-[#0A0B0D]">Structured insight, not guessing.</div>
+                <p class="mt-4 text-[16px] leading-[1.75] text-[#5B616E]">
+                  I review product economics, competition, supply cadence, and marketplace posture to define whether the opportunity belongs in the portfolio at all.
+                </p>
+              </div>
+              <div class="rounded-3xl border border-[#DEE1E6] bg-white p-7 shadow-premium hover-lift">
+                <div class="flex items-center justify-between">
+                  <span class="caption">Capital Protection</span>
+                  <span class="rounded-full bg-[#05B169]/10 px-3 py-1 text-[12px] font-semibold text-[#05B169]">Controlled</span>
+                </div>
+                <div class="mt-6 text-[28px] font-semibold tracking-[-0.04em] text-[#0A0B0D]">Capital stays accountable.</div>
+                <p class="mt-4 text-[16px] leading-[1.75] text-[#5B616E]">
+                  Wholesale growth only works when deployment is disciplined. I keep the model tight so spend remains strategic and working capital isn’t wasted.
+                </p>
+              </div>
+            </div>
+
+            <div class="rounded-[28px] border border-[#DEE1E6] bg-[#0A0B0D] p-8 text-white shadow-premium animated-border">
+              <div class="flex flex-wrap items-start justify-between gap-6">
+                <div class="max-w-2xl">
+                  <span class="eyebrow eyebrow-dark">Why Partner With Me</span>
+                  <h3 class="mt-5 text-[28px] font-semibold tracking-[-0.04em] text-white">I combine financial rigor with marketplace expertise to deliver results that matter.</h3>
+                  <p class="mt-4 text-[16px] leading-[1.8] text-white/72">
+                    I prioritize profit and sustainable ROI over vanity metrics, ensuring your growth is both impressive and intelligent. You’ll always have clarity on performance, strategy, and the “why” behind every action we take together. Your brand is protected through ethical sourcing, strict compliance, and an unwavering commitment to excellence.
+                  </p>
+                </div>
+                <div class="grid gap-3 min-w-[220px]">
+                  <div class="rounded-3xl border border-white/8 bg-white/4 p-4">
+                    <div class="text-[12px] uppercase tracking-[0.14em] text-white/45">Brand Stewardship</div>
+                    <div class="mt-2 text-[15px] font-semibold text-white">High-trust execution</div>
+                  </div>
+                  <div class="rounded-3xl border border-white/8 bg-white/4 p-4">
+                    <div class="text-[12px] uppercase tracking-[0.14em] text-white/45">Execution Style</div>
+                    <div class="mt-2 text-[15px] font-semibold text-white">Quietly confident</div>
+                  </div>
+                  <div class="rounded-3xl border border-white/8 bg-white/4 p-4">
+                    <div class="text-[12px] uppercase tracking-[0.14em] text-white/45">Outcome Focus</div>
+                    <div class="mt-2 text-[15px] font-semibold text-white">Compounding growth</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-7 grid gap-4 md:grid-cols-3">
+                <div class="rounded-3xl border border-white/8 bg-white/4 p-5">
+                  <div class="text-[12px] text-white/45">Brands Analyzed</div>
+                  <div class="mt-2 text-[28px] font-semibold tracking-[-0.04em] text-white counter">120+</div>
+                </div>
+                <div class="rounded-3xl border border-white/8 bg-white/4 p-5">
+                  <div class="text-[12px] text-white/45">Profit Focus</div>
+                  <div class="mt-2 text-[28px] font-semibold tracking-[-0.04em] text-white">Always</div>
+                </div>
+                <div class="rounded-3xl border border-white/8 bg-white/4 p-5">
+                  <div class="text-[12px] text-white/45">Communication</div>
+                  <div class="mt-2 text-[28px] font-semibold tracking-[-0.04em] text-white">Direct</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid gap-6 lg:grid-cols-2">
+              <div class="rounded-3xl border border-[#DEE1E6] bg-white p-7 shadow-premium hover-lift">
+                <div class="caption">Professional Snapshot</div>
+                <div class="mt-4 text-[18px] font-semibold tracking-[-0.03em] text-[#0A0B0D]">Amazon growth strategy built on finance-first thinking.</div>
+                <p class="mt-4 text-[16px] leading-[1.75] text-[#5B616E]">
+                  I focus on sustainable growth mechanics, clear operational rhythms, and the invisible details that make a portfolio feel controlled and premium.
+                </p>
+              </div>
+              <div class="rounded-3xl border border-[#DEE1E6] bg-white p-7 shadow-premium hover-lift">
+                <div class="caption">Execution Principles</div>
+                <div class="mt-4 text-[18px] font-semibold tracking-[-0.03em] text-[#0A0B0D]">No noise. No shortcuts. No black-box management.</div>
+                <p class="mt-4 text-[16px] leading-[1.75] text-[#5B616E]">
+                  Clear reporting, disciplined sourcing, and risk-aware logistics create a working system that can be trusted when scale gets serious.
+                </p>
               </div>
             </div>
           </div>
@@ -459,320 +1023,246 @@
       </div>
     </section>
 
-    <!-- Why Partner Section -->
-    <section class="py-20 sm:py-28 border-t border-white/6">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="section-header text-4xl sm:text-5xl font-black tracking-tight text-white mx-auto">Why Partner With Me</h2>
-          <p class="mt-6 text-xl text-gray-400 max-w-2xl mx-auto">
-            I combine financial rigor with marketplace expertise to deliver results that matter.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Principle 1 -->
-          <div class="reveal card p-8 lg:p-10 group hover:border-sky-400/50" style="animation-delay: 0.1s;">
-            <div class="flex items-center justify-center h-20 w-20 rounded-xl mx-auto mb-6 group-hover:scale-110 transition-transform" style="background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.2);">
-              <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-              </svg>
+    <section class="section-pad bg-[#F7F7F7]">
+      <div class="mx-auto max-w-8xl px-6 lg:px-8">
+        <div class="grid gap-6 lg:grid-cols-3">
+          <article class="reveal stagger-1 rounded-3xl border border-[#DEE1E6] bg-white p-8 shadow-premium hover-lift">
+            <div class="flex items-center justify-between">
+              <span class="caption">Strategic Analysis</span>
+              <span class="text-[12px] font-semibold text-[#0052FF]">Core</span>
             </div>
-            <h3 class="text-2xl font-bold text-white text-center mb-4">Financial Rigor</h3>
-            <p class="text-gray-400 text-center leading-relaxed">
-              Every decision is viewed through a financial lens. I prioritize profit and sustainable ROI over vanity metrics, ensuring your growth is both impressive and intelligent.
+            <p class="mt-6 text-[17px] leading-[1.8] text-[#5B616E]">
+              In-depth market research, competitor analysis, and product profitability assessments to guide each move with confidence.
             </p>
-          </div>
-
-          <!-- Principle 2 -->
-          <div class="reveal card p-8 lg:p-10 group hover:border-sky-400/50" style="animation-delay: 0.2s;">
-            <div class="flex items-center justify-center h-20 w-20 rounded-xl mx-auto mb-6 group-hover:scale-110 transition-transform" style="background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.2);">
-              <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.653-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.653.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-              </svg>
+          </article>
+          <article class="reveal stagger-2 rounded-3xl border border-[#DEE1E6] bg-white p-8 shadow-premium hover-lift">
+            <div class="flex items-center justify-between">
+              <span class="caption">Growth Strategy</span>
+              <span class="text-[12px] font-semibold text-[#0052FF]">Scale</span>
             </div>
-            <h3 class="text-2xl font-bold text-white text-center mb-4">Transparent Partnership</h3>
-            <p class="text-gray-400 text-center leading-relaxed">
-              I believe in open, honest communication. You'll always have clarity on performance, strategy, and the "why" behind every action we take together.
+            <p class="mt-6 text-[17px] leading-[1.8] text-[#5B616E]">
+              Data-driven strategies to optimize your Amazon presence, improve visibility, and convert operational clarity into expansion.
             </p>
-          </div>
-
-          <!-- Principle 3 -->
-          <div class="reveal card p-8 lg:p-10 group hover:border-sky-400/50" style="animation-delay: 0.3s;">
-            <div class="flex items-center justify-center h-20 w-20 rounded-xl mx-auto mb-6 group-hover:scale-110 transition-transform" style="background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.2);">
-              <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m7.802-1.386a6.001 6.001 0 01-11.604 0m10.802 8.386a6.001 6.001 0 00-11.604 0M19 20H5a2 2 0 01-2-2V7a2 2 0 012-2h14a2 2 0 012 2v11a2 2 0 01-2 2z"></path>
-              </svg>
+          </article>
+          <article class="reveal stagger-3 rounded-3xl border border-[#DEE1E6] bg-white p-8 shadow-premium hover-lift">
+            <div class="flex items-center justify-between">
+              <span class="caption">Profitability Optimization</span>
+              <span class="text-[12px] font-semibold text-[#0052FF]">Margin</span>
             </div>
-            <h3 class="text-2xl font-bold text-white text-center mb-4">Unwavering Integrity</h3>
-            <p class="text-gray-400 text-center leading-relaxed">
-              Your brand is your most valuable asset. I protect it through ethical sourcing, strict compliance, and unwavering commitment to excellence in all operations.
+            <p class="mt-6 text-[17px] leading-[1.8] text-[#5B616E]">
+              Financial analysis and optimization to maximize your bottom line while maintaining operational efficiency and resilience.
             </p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Services Preview Section -->
-    <section class="py-20 sm:py-28 border-t border-white/6">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="section-header text-4xl sm:text-5xl font-black tracking-tight text-white mx-auto">What I Offer</h2>
-          <p class="mt-6 text-xl text-gray-400 max-w-2xl mx-auto">
-            Complete Amazon solutions tailored to your growth objectives.
-          </p>
-        </div>
+    <section class="section-pad bg-white">
+      <div class="mx-auto max-w-8xl px-6 lg:px-8">
+        <div class="rounded-[32px] bg-[#0A0B0D] p-8 text-white shadow-premium lg:p-10">
+          <div class="grid gap-10 lg:grid-cols-[1fr_0.95fr] lg:items-center">
+            <div class="reveal">
+              <span class="eyebrow eyebrow-dark">Ready to Transform Your Amazon Business?</span>
+              <h2 class="display-tight mt-5 text-[clamp(34px,4.2vw,54px)] leading-[1.02] tracking-display text-white">
+                Let’s discuss how my unique blend of financial strategy and Amazon expertise can accelerate your brand’s profitable growth.
+              </h2>
+              <p class="mt-5 max-w-2xl text-[18px] leading-[1.8] text-white/72">
+                Book a strategy call today. I’ll help you understand the margin structure, identify the strongest opportunities, and build a cleaner growth machine around your wholesale portfolio.
+              </p>
+            </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="reveal card p-8 lg:p-10 group hover:border-sky-400/50" style="animation-delay: 0.1s;">
-            <h3 class="text-2xl font-bold text-white mb-4">📊 Strategic Analysis</h3>
-            <p class="text-gray-400 leading-relaxed">
-              In-depth market research, competitor analysis, and product profitability assessments to guide your growth decisions.
-            </p>
-          </div>
-
-          <div class="reveal card p-8 lg:p-10 group hover:border-sky-400/50" style="animation-delay: 0.2s;">
-            <h3 class="text-2xl font-bold text-white mb-4">🚀 Growth Strategy</h3>
-            <p class="text-gray-400 leading-relaxed">
-              Data-driven strategies to optimize your Amazon presence, improve visibility, and scale profitably.
-            </p>
-          </div>
-
-          <div class="reveal card p-8 lg:p-10 group hover:border-sky-400/50" style="animation-delay: 0.3s;">
-            <h3 class="text-2xl font-bold text-white mb-4">💰 Profitability Optimization</h3>
-            <p class="text-gray-400 leading-relaxed">
-              Financial analysis and optimization to maximize your bottom line while maintaining operational efficiency.
-            </p>
-          </div>
-        </div>
-
-        <div class="mt-12 text-center">
-          <a href="services.html" class="btn btn-primary cta-btn">Explore All Services</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-20 sm:py-28 border-t border-white/6">
-      <div class="max-w-4xl mx-auto px-6">
-        <div class="relative overflow-hidden rounded-2xl p-12 sm:p-16 lg:p-20" style="background: linear-gradient(135deg, rgba(56,189,248,0.1) 0%, rgba(35,47,62,0.1) 100%); border: 1px solid rgba(56,189,248,0.2);">
-          <div class="absolute -top-20 -right-20 w-40 h-40 bg-sky-400/10 rounded-full blur-3xl"></div>
-          <div class="absolute -bottom-20 -left-20 w-40 h-40 bg-blue-600/10 rounded-full blur-3xl"></div>
-          
-          <div class="relative text-center">
-            <h2 class="text-4xl sm:text-5xl font-black text-white mb-6">
-              Ready to Transform Your Amazon Business?
-            </h2>
-            <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
-              Let's discuss how my unique blend of financial strategy and Amazon expertise can accelerate your brand's profitable growth. Book a strategy call today.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="contact.html" class="btn btn-primary cta-btn text-lg px-8">Book Strategy Call</a>
-              <a href="about.html" class="btn btn-ghost text-lg px-8">Learn More About Me</a>
+            <div class="reveal">
+              <div class="grid gap-4">
+                <div class="rounded-3xl border border-white/8 bg-white/5 p-5">
+                  <div class="text-[12px] uppercase tracking-[0.14em] text-white/45">What you get</div>
+                  <div class="mt-2 text-[18px] font-semibold tracking-[-0.03em] text-white">A serious conversation about growth, capital, and profitability.</div>
+                </div>
+                <div class="rounded-3xl border border-white/8 bg-white/5 p-5">
+                  <div class="text-[12px] uppercase tracking-[0.14em] text-white/45">Style</div>
+                  <div class="mt-2 text-[18px] font-semibold tracking-[-0.03em] text-white">Quietly premium, highly disciplined, completely transparent.</div>
+                </div>
+              </div>
+              <div class="mt-6 flex flex-wrap gap-3">
+                <a href="mailto:shehrozwaleedbaloch@gmail.com" class="rounded-full px-6 py-3 text-[15px] font-semibold button-blue">Email Me</a>
+                <a href="tel:+923363330711" class="rounded-full border border-white/16 px-6 py-3 text-[15px] font-semibold text-white transition hover:bg-white/6">Call Now</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <footer class="border-t border-[#EEF0F3] bg-white">
+      <div class="mx-auto max-w-8xl px-6 py-16 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-[1.05fr_0.8fr_0.8fr_1fr]">
+          <div class="reveal">
+            <a href="#home" class="flex items-center gap-3">
+              <span class="flex h-8 w-8 items-center justify-center rounded-[10px] bg-[#0052FF] text-sm font-semibold text-white shadow-lg shadow-blue-500/15">S</span>
+              <span class="text-[15px] font-semibold tracking-[-0.02em] text-[#0A0B0D]">Shehroz Waleed</span>
+            </a>
+            <p class="mt-5 max-w-sm text-[14px] leading-[1.75] text-[#5B616E]">
+              Amazon Wholesale Growth Specialist focused on disciplined expansion, financial rigor, and high-trust execution.
+            </p>
+          </div>
+
+          <div class="reveal">
+            <div class="text-[12px] font-semibold uppercase tracking-[0.14em] text-[#7C828A]">Navigation</div>
+            <div class="mt-5 grid gap-3 text-[14px]">
+              <a href="#about" class="animated-underline w-fit text-[#0A0B0D]">About</a>
+              <a href="#competencies" class="animated-underline w-fit text-[#0A0B0D]">Capabilities</a>
+              <a href="#ledger" class="animated-underline w-fit text-[#0A0B0D]">Ledger</a>
+              <a href="#contact" class="animated-underline w-fit text-[#0A0B0D]">Contact</a>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <div class="text-[12px] font-semibold uppercase tracking-[0.14em] text-[#7C828A]">Contact</div>
+            <div class="mt-5 grid gap-3 text-[14px]">
+              <a href="mailto:shehrozwaleedbaloch@gmail.com" class="animated-underline w-fit text-[#0A0B0D]">shehrozwaleedbaloch@gmail.com</a>
+              <a href="tel:+923363330711" class="animated-underline w-fit text-[#0A0B0D]">+92 336 3330711</a>
+              <a href="https://www.linkedin.com/in/shehrozwaleed" target="_blank" rel="noopener noreferrer" class="animated-underline w-fit text-[#0A0B0D]">LinkedIn</a>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <div class="text-[12px] font-semibold uppercase tracking-[0.14em] text-[#7C828A]">Validation</div>
+            <div class="mt-5 grid gap-3">
+              <div class="rounded-3xl border border-[#EEF0F3] bg-[#F7F7F7] p-4">
+                <div class="text-[12px] text-[#7C828A]">Business focus</div>
+                <div class="mt-1 text-[14px] font-semibold text-[#0A0B0D]">Wholesale growth and profitability</div>
+              </div>
+              <div class="rounded-3xl border border-[#EEF0F3] bg-[#F7F7F7] p-4">
+                <div class="text-[12px] text-[#7C828A]">Execution model</div>
+                <div class="mt-1 text-[14px] font-semibold text-[#0A0B0D]">Finance-first, clarity-driven</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 border-t border-[#EEF0F3] pt-6 text-[13px] text-[#7C828A]">
+          <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div>© <span id="year"></span> Shehroz Waleed. All rights reserved.</div>
+            <div class="flex flex-wrap gap-3">
+              <span class="rounded-full bg-[#F7F7F7] px-3 py-1.5">Financial rigor</span>
+              <span class="rounded-full bg-[#F7F7F7] px-3 py-1.5">Transparent partnership</span>
+              <span class="rounded-full bg-[#F7F7F7] px-3 py-1.5">Operational integrity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </main>
 
-  <!-- Footer -->
-  <footer class="border-t border-white/6 mt-20">
-    <div class="max-w-7xl mx-auto px-6 py-16">
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-        <!-- Brand -->
-        <div class="reveal fade-in-up" style="animation-delay: 0.1s;">
-          <h3 class="text-2xl font-extrabold text-white mb-4">Shehroz Waleed</h3>
-          <p class="text-gray-400 mb-4">
-            Fusing financial acumen with e-commerce expertise to architect sustainable, profitable growth on Amazon.
-          </p>
-          <div class="flex items-center gap-2 text-gray-400">
-            <svg class="w-5 h-5 text-sky-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
-            </svg>
-            <span>Lahore, Punjab, Pakistan</span>
-          </div>
-        </div>
-
-        <!-- Quick Links -->
-        <div class="reveal fade-in-up" style="animation-delay: 0.15s;">
-          <h4 class="footer-title text-base mb-6 text-white">Navigation</h4>
-          <ul class="space-y-3">
-            <li><a href="index.html" class="quick-link inline-flex items-center gap-2 group text-sky-400 font-semibold"><svg class="w-4 h-4 transition-transform group-hover:scale-125" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a2 2 0 01-2 2H9a2 2 0 01-2-2v-1"></path></svg>Home</a></li>
-            <li><a href="about.html" class="quick-link inline-flex items-center gap-2 group"><svg class="w-4 h-4 transition-transform group-hover:scale-125" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>About</a></li>
-            <li><a href="services.html" class="quick-link inline-flex items-center gap-2 group"><svg class="w-4 h-4 transition-transform group-hover:scale-125" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>Services</a></li>
-            <li><a href="contact.html" class="quick-link inline-flex items-center gap-2 group"><svg class="w-4 h-4 transition-transform group-hover:scale-125" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>Contact</a></li>
-            <li><a href="privacy.html" class="quick-link inline-flex items-center gap-2 group"><svg class="w-4 h-4 transition-transform group-hover:scale-125" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m7.802-1.386a6.001 6.001 0 01-11.604 0m10.802 8.386a6.001 6.001 0 00-11.604 0M19 20H5a2 2 0 01-2-2V7a2 2 0 012-2h14a2 2 0 012 2v11a2 2 0 01-2 2z"></path></svg>Privacy</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact Info -->
-        <div class="reveal fade-in-up" style="animation-delay: 0.2s;">
-          <h4 class="footer-title text-base mb-6 text-white">Get In Touch</h4>
-          <ul class="space-y-4">
-            <li>
-              <a class="contact-link group flex items-start gap-3 hover:scale-105 transition-transform" href="mailto:shehrozwaleedbaloch@gmail.com">
-                <svg class="w-5 h-5 text-sky-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                <span class="break-all text-gray-400 group-hover:text-sky-400 transition-colors">shehrozwaleedbaloch@gmail.com</span>
-              </a>
-            </li>
-            <li>
-              <a class="contact-link group flex items-center gap-3 hover:scale-105 transition-transform" href="tel:+923363330711">
-                <svg class="w-5 h-5 text-sky-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
-                <span class="text-gray-400 group-hover:text-sky-400 transition-colors">+92 336 3330711</span>
-              </a>
-            </li>
-            <li>
-              <a class="contact-link group flex items-center gap-3 hover:scale-105 transition-transform" href="https://wa.me/923363330711" target="_blank" rel="noopener noreferrer">
-                <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                <span class="text-gray-400 group-hover:text-green-400 transition-colors">WhatsApp</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Social & Subscribe -->
-        <div class="reveal fade-in-up" style="animation-delay: 0.25s;">
-          <h4 class="footer-title text-base mb-6 text-white">Connect & Subscribe</h4>
-          <p class="text-gray-400 text-sm mb-4">
-            Get exclusive insights and updates — no spam, just value.
-          </p>
-
-          <div class="flex gap-2 mb-6">
-            <a href="https://www.linkedin.com/in/shehrozwaleed" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75c.966 0 1.75.784 1.75 1.75s-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-1.335-.025-3.054-1.863-3.054-1.864 0-2.151 1.454-2.151 2.958v5.7h-3v-11h2.881v1.501h.041c.401-.757 1.379-1.557 2.838-1.557 3.033 0 3.594 1.996 3.594 4.59v6.466z"/></svg>
-            </a>
-            <a href="https://twitter.com/shehroz__waleed" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231L18.244 2.25zm-3.287 10.257l-1.755-2.318L4.98 20.25h2.728l7.249-7.743zm-5.852-7.744l3.26 4.304 1.862 2.46 7.25-7.744h-2.727l-3.26 4.304-1.862-2.46-7.25 7.744h2.727z"/></svg>
-            </a>
-            <a href="https://www.instagram.com/shehroz__waleed" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.148 3.225-1.664 4.771-4.919 4.919-1.265.058-1.645.069-4.85.069s-3.585-.011-4.85-.069c-3.225-.148-4.771-1.664-4.919-4.919C2.175 16.598 2.163 16.218 2.163 12.999s.012-3.584.07-4.85c.148-3.225 1.664-4.771 4.919-4.919C8.415 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072c-4.425.2-6.814 2.588-7.015 7.014C.013 8.332 0 8.741 0 12s.013 3.668.072 4.948c.201 4.425 2.59 6.814 7.015 7.014C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c4.425-.2 6.814-2.589 7.015-7.014.059-1.28.072-1.689.072-4.948s-.013-3.668-.072-4.948c-.201-4.426-2.59-6.814-7.015-7.014C15.668.013 15.259 0 12 0z"/></svg>
-            </a>
-            <a href="https://www.facebook.com/shehrozwaleed228" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.35C0 23.407.593 24 1.325 24H12.82v-9.29h-3.128v-3.622h3.128V8.413c0-3.1 1.797-4.788 4.543-4.788 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.491 0-1.957.926-1.957 1.874v2.25h3.328l-.532 3.622h-2.796V24h5.486c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
-            </a>
-          </div>
-
-          <div>
-            <form id="subscribeForm" class="flex gap-2">
-              <label for="subEmail" class="sr-only">Email address</label>
-              <input id="subEmail" type="email" placeholder="your@email.com" class="form-input flex-1 text-sm" required>
-              <button type="submit" class="btn btn-primary text-sm px-4">Subscribe</button>
-            </form>
-            <div id="subMsg" class="mt-3 text-xs text-gray-500">No spam. Valuable updates only.</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Copyright -->
-      <div class="border-t border-white/10 mt-12 pt-8 text-center text-sm text-gray-500">
-        <p>&copy; <span id="year"></span> Shehroz Waleed. Empowering Amazon Sellers with Data-Driven Growth Strategies. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
   <script>
-    // Set current year
-    document.getElementById('year').textContent = new Date().getFullYear();
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-    // Mobile menu toggle
-    const mobileToggle = document.getElementById('mobile-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    
-    if (mobileToggle && mobileMenu) {
-      mobileToggle.addEventListener('click', () => {
-        const expanded = mobileToggle.getAttribute('aria-expanded') === 'true';
-        mobileToggle.setAttribute('aria-expanded', String(!expanded));
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        const expanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+        mobileMenuBtn.setAttribute('aria-expanded', String(!expanded));
         mobileMenu.classList.toggle('hidden');
       });
 
-      // Close menu when link clicked
-      mobileMenu.querySelectorAll('a').forEach(link => {
+      mobileMenu.querySelectorAll('a').forEach((link) => {
         link.addEventListener('click', () => {
-          mobileToggle.setAttribute('aria-expanded', 'false');
+          mobileMenuBtn.setAttribute('aria-expanded', 'false');
           mobileMenu.classList.add('hidden');
         });
       });
     }
 
-    // Subscribe form handler
-    const subscribeForm = document.getElementById('subscribeForm');
-    const subMsg = document.getElementById('subMsg');
-    
-    if (subscribeForm) {
-      subscribeForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const email = document.getElementById('subEmail').value;
-        
-        // Animate response
-        subMsg.style.animation = 'none';
-        setTimeout(() => {
-          subMsg.textContent = `✓ Thanks! Check ${email} for confirmation.`;
-          subMsg.style.color = 'var(--sky-400)';
-          subMsg.style.animation = 'fadeInUp 0.5s ease forwards';
-          subscribeForm.reset();
-          
-          setTimeout(() => {
-            subMsg.textContent = 'No spam. Valuable updates only.';
-            subMsg.style.color = '#6b7280';
-          }, 5000);
-        }, 100);
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          observer.unobserve(entry.target);
+        }
       });
+    }, { threshold: 0.16, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach((el) => observer.observe(el));
+
+    const counters = document.querySelectorAll('.counter');
+    const numberObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const text = el.textContent.trim();
+        if (text.includes('$50M+')) {
+          animateValue(el, 0, 50, 1400, '$', 'M+');
+        } else if (text.includes('40%')) {
+          animateValue(el, 0, 40, 1200, '', '%');
+        } else if (text.includes('6+')) {
+          animateValue(el, 0, 6, 1000, '', '+');
+        } else if (text.includes('$318K')) {
+          animateValue(el, 0, 318, 1300, '$', 'K');
+        } else if (text.includes('120+')) {
+          animateValue(el, 0, 120, 1200, '', '+');
+        }
+        numberObserver.unobserve(el);
+      });
+    }, { threshold: 0.35 });
+
+    counters.forEach((el) => numberObserver.observe(el));
+
+    function animateValue(el, start, end, duration, prefix, suffix) {
+      const startTime = performance.now();
+      const tick = (now) => {
+        const progress = Math.min((now - startTime) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const value = Math.round(start + (end - start) * eased);
+        el.textContent = `${prefix}${value}${suffix}`;
+        if (progress < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
     }
 
-    // Scroll reveal functionality
-    const revealElements = document.querySelectorAll('.reveal');
-    
-    if (revealElements.length > 0) {
-      const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            revealObserver.unobserve(entry.target);
-          }
-        });
-      }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-      });
+    const cursor = document.createElement('div');
+    cursor.className = 'pointer-events-none fixed left-0 top-0 z-[999] h-6 w-6 rounded-full border border-[#0052FF]/25 mix-blend-multiply transition-transform duration-75';
+    document.body.appendChild(cursor);
 
-      revealElements.forEach(el => revealObserver.observe(el));
+    const finePointer = window.matchMedia('(pointer:fine)').matches;
+    const hero = document.querySelector('.hero-dark');
+
+    if (finePointer && hero) {
+      window.addEventListener('mousemove', (e) => {
+        cursor.style.transform = `translate3d(${e.clientX - 12}px, ${e.clientY - 12}px, 0)`;
+        const rect = hero.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+        hero.style.setProperty('--mouse-x', `${x}%`);
+        hero.style.setProperty('--mouse-y', `${y}%`);
+      });
+    } else {
+      cursor.style.display = 'none';
     }
 
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        if (href !== '#') {
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener('click', (e) => {
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (target) {
           e.preventDefault();
-          const target = document.querySelector(href);
-          if (target) {
-            target.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
-            });
-          }
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       });
     });
-
-    // Header scroll effect
-    const header = document.getElementById('site-header');
-    let lastScrollTop = 0;
-
-    window.addEventListener('scroll', () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      
-      if (scrollTop > 50) {
-        header.style.borderBottomColor = 'rgba(56, 189, 248, 0.1)';
-        header.style.background = 'linear-gradient(180deg, rgba(35,47,62,0.12), rgba(255,255,255,0.00))';
-      } else {
-        header.style.borderBottomColor = 'rgba(255,255,255,0.04)';
-        header.style.background = 'linear-gradient(180deg, rgba(35,47,62,0.08), rgba(255,255,255,0.00))';
-      }
-      
-      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-    });
   </script>
+
+  <style>
+    .hero-dark::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 25%), rgba(0,82,255,0.18), transparent 20%),
+        radial-gradient(circle at 20% 80%, rgba(255,255,255,0.06), transparent 20%);
+      pointer-events: none;
+      opacity: 0.85;
+    }
+  </style>
 </body>
 </html>
